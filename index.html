@@ -14,7 +14,48 @@
             <h4>Login to your account</h4>
             <input type="email" class="form-control mt-3" placeholder="Please type your email here">
             <input type="password" class="form-control mt-3" placeholder="Please type your password">
-            <button type="submit" class="btn btn-success mt-3">Log In</button>
+            <button type="submit" id= "button" class="btn btn-success mt-3">Log In</button>
+        </div>
+    </section>
+
+    <section id="transation-area" class="container pt-5 mt-5">
+        <div class="card-deck rounded-lg text-white">
+            <div class="card bg-success">
+                <div class="card-body">
+                <h5 class="card-title">Deposite</h5>
+                <h1>$<span id = "deposite-amount-change">00</span></h1>
+                </div>
+            </div>
+            <div class="card bg-danger">
+                <div class="card-body">
+                <h5 class="card-title">Withdraw</h5>
+                <h1>$00</h1>
+                </div>
+            </div>
+            <div class="card bg-warning">
+                <div class="card-body">
+                <h5 class="card-title">Balance</h5>
+                <h1>$<span id = "total-balance-change">1200</span></h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-deck rounded-lg pt-5 mt-5">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Deposite</h3>
+                    <input type="number" id = "deposite-amount" class="form-control" placeholder="$ Amount you want to deposite ">
+                    <button type="submit" id= "deposite-btn" class="btn btn-success mt-3">Deposite</button>
+                </div>
+            </div>
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Withdraw</h3>
+                    <input type="number" class="form-control" placeholder="$ Amount you want to withdraw ">
+                    <button type="submit" id= "" class="btn btn-success mt-3">Withdraw</button>
+                </div>
+            </div>
         </div>
     </section>
     <script src="index.js"></script>
